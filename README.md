@@ -18,10 +18,11 @@ It is built on top of the open source library released by Cormode and Hadjieleft
 (see http://hadjieleftheriou.com/frequent-items/index.html)
 
 Most parameters are tunable from the command line, e.g.:
-frequent-items.exe -phi 0.03125 -M 65528 -reps 1 -gamma 0.0078125 -f myTrace.txt
 
-Here, 0.03125 is the error parameter, 65528 is a bound on the packet size, and 1 is the number of times we repeat the time measurement
-gamma is a parameter that affects a space-time tradeoff as discussed in the paper
+`frequent-items.exe -phi 0.03125 -M 65528 -reps 1 -gamma 0.0078125 -f myTrace.txt`
+
+Here, 0.03125 is the error parameter, 65528 is a bound on the packet size, and 1 is the number of times we repeat the time measurement.
+Gamma is a parameter that affects a space-time tradeoff as discussed in the paper
 
 The main() function is inside a file called hh.cc, and FAST is implemented in FAST.*.
 
