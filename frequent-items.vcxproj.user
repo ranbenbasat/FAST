@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LocalDebuggerCommandArguments>-phi 0.03125 -M 65528 -reps 1 -gamma 0.0078125 -f ../../data/BrokenTraces\equinix-sanjose.dirA.20131219-130000-130500.trace_part_1 -MSE</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerCommandArguments>-phi 0.03125 -M 65528 -reps 1 -gamma 0.0078125 -f ../../data/BrokenTraces\equinix-sanjose.dirA.20131219-130000-130500.trace_part_1 -MSE</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerCommandArguments>-phi 0.00390625 -M 3600 -reps 200 -gamma 0.00390625 -MSE -f -phi 0.00390625 -M 3600 -reps 200 -gamma 0.00390625  -f ../../data/YoutubeDS.txt -MSE</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerCommandArguments>-phi 0.00387596899225 -M 65528 -reps 1 -f ../../data/BrokenTraces\equinix-sanjose.dirA.20131219-130000-130500.trace_part_1 -MSE</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommandArguments>-phi 0.00387596899225 -M 65528 -reps 1 -f ../../data/BrokenTraces\equinix-sanjose.dirA.20131219-130000-130500.trace_part_1 -MSE</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommandArguments>-phi 0.00390625 -M 3600 -reps 200 -gamma 0.00390625 -MSE -f ../../data/YoutubeDS.txt</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>
