@@ -6,11 +6,15 @@ the algorithm is presented in the paper Fast Flow Volume Estimation (ACM ICDCN 2
 by  Ben Basat, Einziger and Friedman
 
 To run, you will need a trace in which each line is a flow identifier, space, and the size of the packet. For example:
+
 0 167
+
 0 1460
+
 4 40
 
 It is built on top of the open source library released by Cormode and Hadjieleftheriou 
+
 (see http://hadjieleftheriou.com/frequent-items/index.html)
 
 Most parameters are tunable from the command line, e.g.:
