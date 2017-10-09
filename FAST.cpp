@@ -405,9 +405,32 @@ void FAST::clear()
 	for (i = 0; i<m_tblsz; i++)
 		m_hashtable[i] = NULL;
 
+	m_root = m_groups;
 	m_groups->count = 0;
 	m_groups->nextg = NULL;
 	m_groups->previousg = NULL;
 
-	m_groups->items = m_items;// TODO: check if there is more counters to reset
+	m_groups->items = m_items;
+	for (i = 0; i<m_nrCounters; i++)
+		m_freegroups[i] = &m_groups[i];
+	m_gpt = 1; // initialize list of free groups
+
+	for (i = 0; i<m_nrCounters; i++)
+	{
+		m_items[i].item = 0;
+		//m_items[i].delta = -1;
+		m_items[i].hash = 0;
+		m_items[i].nexti = NULL;
+		m_items[i].previousi = NULL;  // initialize values
+
+		m_items[i].parentg = m_groups;
+		m_items[i].nexting = &(m_items[i + 1]);
+		m_items[i].previousing = &(m_items[i - 1]);
+		// create doubly linked list
+	}
+	m_items[0].previousing = &(m_items[m_nrCounters - 1]);
+	m_items[m_nrCounters - 1].nexting = &(m_items[0]);
+	// fix start and end of linked list
+
+	m_nrFree = m_nrCounters;
 }
