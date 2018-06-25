@@ -2,7 +2,7 @@
 A FAST algorithm for approximate volume (weighted frequency) estimation over data streams
 
 This is an implementation of the FAST algorithm for efficient estimation of flow volumes (weighted frequency estimation)
-the algorithm is presented in the paper Fast Flow Volume Estimation (ACM ICDCN 2018) 
+the algorithm is presented in the paper Fast Flow Volume Estimation (Pervasive and Mobile Computing Journal, 2018, https://www.sciencedirect.com/science/article/pii/S1574119218301342) 
 by  Ben Basat, Einziger and Friedman
 
 To run, you will need a trace in which each line is a flow identifier, space, and the size of the packet. For example:
